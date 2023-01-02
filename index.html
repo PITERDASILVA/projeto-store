@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archimides - Loja</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/m-q.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1 class="heading">Archimides</h1>
+        <p>The life is one.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Info</a></li>
+                </ul>
+            </nav>
+            <i  id="burguer" class="material-symbols-outlined" onclick="clickMenu()">Menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Man</a></li>
+                <li><a href="#">Woman</a></li>
+                <li><a href="#">Kid</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="imagens/istockphoto-1354031012-170667a.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Red Shirt</h3>
+                        <p>€ 19.99</p>
+                        <a href="#" class="btn">Buy</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="imagens/istockphoto-1354031012-170667a.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Shirt</h3>
+                        <p>€ 19.99</p>
+                        <a href="#" class="btn">Buy</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="imagens/istockphoto-1354031012-170667a.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Shirt</h3>
+                        <p>€ 19.99</p>
+                        <a href="#" class="btn">Buy</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="imagens/istockphoto-1354031012-170667a.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Shirt</h3>
+                        <p>€ 19.99</p>
+                        <a href="#" class="btn">Buy</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="imagens/istockphoto-1354031012-170667a.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Shirt</h3>
+                        <p>€ 19.99</p>
+                        <a href="#" class="btn">Buy</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="imagens/istockphoto-1354031012-170667a.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Shirt</h3>
+                        <p>€ 19.99</p>
+                        <a href="#" class="btn">Buy</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="imagens/istockphoto-1354031012-170667a.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Shirt</h3>
+                        <p>€ 19.99</p>
+                        <a href="#" class="btn">Buy</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="imagens/istockphoto-1354031012-170667a.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Shirt</h3>
+                        <p>€ 19.99</p>
+                        <a href="#" class="btn">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div id="load-more">Load More...</div>
+        </div>
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#"><img src="imagens/icons8-instagram-48.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/icons8-facebook-48.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/icons8-whatsapp-48.png"€ 19.99
+    </footer>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }          
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

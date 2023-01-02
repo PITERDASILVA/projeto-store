@@ -1,0 +1,204 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s liner;
+}
+/*
+    #0B22E0
+    #E00109
+    #2236E0
+    #E00109
+*/
+body, html{
+    height: 100vh;
+}
+body{
+    background-color: white;
+}
+header{
+    background-image: linear-gradient(180deg, #060e57, #2236E0);
+}
+.heading{
+    font-size: 2em;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+header p{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+nav{
+    text-align: center;
+}
+nav > ul > li{
+    display: inline;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    border-radius: 5px;  
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+nav > ul > li:hover{
+    background-color: #E00109;
+}
+i#burguer{
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+i#burguer:hover{
+    color: white;
+    background-color: #E00109;;
+}
+menu{
+    display: none;
+}
+menu > ul > li{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid grey;
+    background-color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+menu > ul > li > a{
+    font-size: 1em;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+menu > ul > li:hover{
+    background-color: red;
+    color: black;
+}
+menu > ul > li > a:hover{
+    color: black;
+}
+main{
+    max-width: 768px;
+    background-color: rgba(158, 235, 241, 0.562);
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    text-align: center;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.container .box-container .box{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.container .box-container .box:nth-child(1),
+.container .box-container .box:nth-child(2),
+.container .box-container .box:nth-child(3),
+.container .box-container .box:nth-child(4){
+    display: inline-block;
+}
+.container .box-container .box .image{
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.container .box-container .box .image img{
+    object-fit: cover;
+}
+.container .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.container .box-container .box .content h3{
+    font-size: 1em;
+}
+.container .box-container .box .content p{
+    font-size: 0.9em;
+    color: black;
+    line-height: 2;
+    padding: 15px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.container .box-container .box .content .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid black;
+    background-color: #E00109;;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.container .box-container .box .content .btn:hover{
+    background-color: red;
+    border-color: white;
+    transform: scale(1.1);
+}
+#load-more{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E0B10B;
+    border: 1px solid black;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+}
+#load-more:hover{
+    background-color:#E00109;
+    border: none;
+    color: white;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    background-image: linear-gradient(180deg,#2236E0, #060e57);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+}
+footer > ul > li{
+    display: inline;
+}
+footer > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+footer > ul > li > a > img{
+    width: 40px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+}
