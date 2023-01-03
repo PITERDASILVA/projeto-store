@@ -1,0 +1,66 @@
+header{
+    margin-bottom: 20px;
+}
+article{
+    max-width: 1000px;
+    background-color: rgba(158, 235, 241, 0.562);
+    max-height: 500px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 2, 0.26);
+}
+
+.max-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+.max-container .max-box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.max-container .max-box-container .max-box{
+    padding: 5px;
+}
+.max-container .max-box-container .max-box .max-img{
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+.max-container .max-box-container .max-box .max-img img{
+    object-fit: cover;
+    padding: 20px;
+}
+.max-container .max-box-container .max-box .max-img img:hover{
+    transform: scale(1.1);
+}
+
+.max-content{
+    text-align: center;
+    padding: 20px;
+    line-height: 2em;
+}
+.max-container .max-box-container .max-box .max-content h3{
+    font-size: 1.5em;
+}
+.max-container .max-box-container  .max-box .max-content p{
+    font-size: 1.2em;
+}
+.max-container .max-box-container .max-box .max-content .max-btn{
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    border: 1px solid black;
+    background-color: #E00109;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 2em;
+}
+.max-container .max-box-container .max-box .max-content .max-btn:hover{
+    background-color: red;
+    transform: scale(1.1);
+}

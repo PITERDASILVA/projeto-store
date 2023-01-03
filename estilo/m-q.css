@@ -22,17 +22,24 @@
         text-align: center;
         padding: 20px;
         line-height: 30px;
-        background-color: green;
+        background-image: linear-gradient(180deg, #2236E0);
         margin-top: 20px;
     }
     menu > ul > li{
         display: inline;
         padding-left: 50px;
         padding-right: 50px;
+        border-radius: 5px;
     }
     menu > ul > li:hover{
         background-color: red;
         transition: .05s;
+    }
+    article{
+        background-color: green;
+    }
+    .max-container .max-box-container .max-content h3{
+        text-align: right;
     }
 }
 @media screen and (min-width: 992px) {
