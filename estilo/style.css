@@ -15,14 +15,13 @@
     #2236E0
     #E00109
 */
-body, html{
-    height: 100vh;
-}
+
 body{
     background-color: white;
 }
 header{
     background-image: linear-gradient(180deg, #060e57, #2236E0);
+    width: 100%;
 }
 .heading{
     font-size: 2em;

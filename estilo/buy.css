@@ -3,11 +3,10 @@ header{
 }
 article{
     max-width: 1000px;
-    background-color: rgba(158, 235, 241, 0.562);
+    background-color: blue;
     max-height: 500px;
     margin: auto;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 2, 0.26);
 }
 
 .max-container{
@@ -15,6 +14,9 @@ article{
     margin: 0 auto;
     padding: 15px 20px;
     background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.322);
 }
 .max-container .max-box-container{
     display: grid;
@@ -28,31 +30,38 @@ article{
     margin-bottom: 10px;
     overflow: hidden;
     border-radius: 5px;
-    text-align: center;
+    font-size: 1em;
+    color: black;
+}
+.max-container .max-box-container .max-box .max-img p{
     font-size: 1em;
 }
 .max-container .max-box-container .max-box .max-img img{
     object-fit: cover;
     padding: 20px;
+    width: 300px;
+    display: flex;
+    margin-left: 10px;
 }
 .max-container .max-box-container .max-box .max-img img:hover{
     transform: scale(1.1);
 }
-
-.max-content{
-    text-align: center;
-    padding: 20px;
-    line-height: 2em;
+.max-content .cor{
+    display: inline-block;
 }
-.max-container .max-box-container .max-box .max-content h3{
+.max-container .max-box-container h3{
     font-size: 1.5em;
 }
-.max-container .max-box-container  .max-box .max-content p{
-    font-size: 1.2em;
+.max-container .max-box-container p{
+    font-size: 1.5em;
 }
-.max-container .max-box-container .max-box .max-content .max-btn{
+.max-container .max-box-container .max-btn{
     display: inline-block;
-    padding: 10px 40px 10px 40px;
+    width: 200px;
+    margin-left: 100px;
+    margin-top: -30px;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
     border: 1px solid black;
     background-color: #E00109;
     color: white;
@@ -63,4 +72,24 @@ article{
 .max-container .max-box-container .max-box .max-content .max-btn:hover{
     background-color: red;
     transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+    .max-container .max-box-container{
+        display: inline-block;
+        line-height: 1.5em;
+    }
+    .max-container .max-box-container h3{
+        text-align: center;
+    }
+    .max-container .max-box-container p{
+        margin-bottom: 10px;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .max-container .max-box-container .max-content .cor{
+      margin-left: 125px;
+    }
+    .max-container .max-box-container .max-box .max-img img{
+        margin-left: 40px
+    }
 }
