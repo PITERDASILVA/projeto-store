@@ -1,9 +1,10 @@
 section{
     padding: 10px;   
+    height: 45.6vh;
 }
 form{
    box-shadow: 5px 5px 10px black;
-   padding: 21.3px;
+   padding: 5px;
    max-width: 400px;
    margin: auto;
    border-radius: 10px;
@@ -51,7 +52,7 @@ form > input[type=submit]{
     padding: 5px;
     color: white;
     background-color: blue;
-    border-radius: 8px;
+    border-radius: 5px;
     width: 80%;
     height: 40px;
     border: none;
@@ -74,4 +75,8 @@ form > a.acess{
     height: 40px;
     padding: 10px;
     border-radius: 5px;
+}
+form > a.acess:hover{
+    background-color: red;
+    transition: 1s;
 }
