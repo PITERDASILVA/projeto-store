@@ -96,6 +96,7 @@ menu > ul > li > a:hover{
 }
 main{
     max-width: 768px;
+    height: 100%;
     background-color: rgba(158, 235, 241, 0.562);
     margin: auto;
     margin-bottom: 20px;
@@ -200,4 +201,81 @@ footer > ul > li > a > img{
     padding: 5px;
     margin: 5px;
     margin-top: 10px;
+}
+section{
+    padding: 10px;   
+}
+form{
+   box-shadow: 5px 5px 10px black;
+   padding: 21.3px;
+   max-width: 400px;
+   margin: auto;
+   border-radius: 10px;
+   background-color: rgba(0, 204, 255, 0.062);
+}
+form > h1 {
+    text-align: center;
+    padding: 5px;
+}
+form > div.login{
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 8px;
+    width: 80%;
+    height: 40px;
+    padding-bottom: 10px;
+    display: block;
+    border-radius: 8px;
+}
+form > div.login > label{
+    display: none;
+}
+form > div.login > span{
+    font: 2em;
+    float: left;
+    padding: 5px;
+}
+form > div.login > input{
+    font-size: 1em;
+    padding: 5px;
+    width: calc(100% - 49px);
+    height: 100%;
+    border: 0px;
+    border-radius: 3px;
+    transform: translateY(5px);
+    padding: 2px;
+}
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+form > input[type=submit]:hover{
+    background-color: red;
+    transition: 1s;
+}
+form > a.acess{
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: -15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: blue;
+    border: 2px red;
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
 }
