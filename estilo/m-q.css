@@ -8,6 +8,17 @@
     body{
         background-color: white;
     }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        text-align: center;
+    }
+    .container .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
     i#burguer{
         display: none;
     }
@@ -57,6 +68,17 @@
 @media screen and (min-width: 992px) {
     body{
         background-color: white;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        text-align: center;
+    }
+    .container .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
     }
     i#burguer{
         display: none;

@@ -111,3 +111,19 @@ main{
     }
 
 }
+@media screen and (min-width: 992px) {
+    main{
+        max-width: 1200px;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px 20px;
+        text-align: center;
+    }
+    .container .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+}
