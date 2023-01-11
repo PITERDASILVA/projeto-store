@@ -2,6 +2,10 @@ section{
     padding: 10px;   
     height: 45.6vh;
 }
+section#size{
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
 form{
    box-shadow: 5px 5px 10px black;
    padding: 5px;
@@ -59,24 +63,25 @@ form > input[type=submit]{
     cursor: pointer;
 }
 form > input[type=submit]:hover{
-    background-color: red;
-    transition: 1s;
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
 }
 form > a.acess{
-    color: white;
+    color: black;
     display: block;
     margin: auto;
     margin-top: -15px;
     text-align: center;
     text-decoration: none;
-    background-color: blue;
-    border: 2px red;
+    border: 2px solid blue;
     width: 80%;
     height: 40px;
     padding: 10px;
     border-radius: 5px;
 }
 form > a.acess:hover{
-    background-color: red;
-    transition: 1s;
+    background-color: blue;
+    color: white;
+    border: white;
 }
